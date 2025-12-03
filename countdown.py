@@ -1,17 +1,17 @@
-#countdown timer program
-#promgram Descriptions: this program count down time from a user-given number 10 1.
+# Countdown Timer Program
+#Program Description: This program counts down from a user-given number to 1.
 
-#importting time to add 1 secound delay
-import time 
+#importing time module to add 1 second delay
+import time
 
-#Ask the user to enter a number to start counting down from
-number = int(input("enter a number to start the countdown: "))
+# Ask the user to enter a number to start counting down from
+number = int(input("Enter a number to start the countdown: "))
 
-#keep looping as long as the number id greater than 0
+# Keep looping as long as the number is greater than 0
 while number > 0:
-    print(number)
-    time.sleep(1)
-    number -= 1
+    print(number)  # Print the current number
+    time.sleep(1) #Wait for 1 second before continuing
+    number -= 1    # Subtract 1 from number each time
 
-    #ounce the loop ends print a message
-    print("🎉 time ")
+# Once the loop ends, print a message
+print("🎉 Time's up!")
